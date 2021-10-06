@@ -13,3 +13,13 @@ func TestAdd(t *testing.T) {
 		t.Errorf("actual %q expect %q", actual, expect)
 	}
 }
+
+func TestSub(t *testing.T) {
+
+	actual := Sub(7, 3)
+	expect := 4
+
+	if actual != expect {
+		t.Errorf("actual %q expect %q", actual, expect)
+	}
+}
